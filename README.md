@@ -1,10 +1,13 @@
 # Machine Learning Classification of Quantum Tunneling Regimes
 
-A third-year physics project investigating the use of machine learning to classify different quantum tunneling regimes in simple barrier systems, inspired by the theoretical condensed matter physics research of Michele Governale at Victoria University of Wellington.
+> **⚠️ PROJECT STATUS: Work in Progress / Learning Project**  
+> This repository contains initial code and design documents for a quantum tunneling ML classification project. The implementation is incomplete and notebooks are currently under development. This is a learning/exploratory project, not production-ready research.
+
+A physics learning project exploring machine learning classification of quantum tunneling regimes in potential barrier systems, inspired by theoretical condensed matter physics research at Victoria University of Wellington.
 
 ## Project Overview
 
-This project explores how machine learning can automatically identify different quantum tunneling behaviors from transmission probability data. We simulate electrons tunneling through various barrier configurations and train ML models to classify the underlying physics - a fundamental building block for understanding more complex quantum transport phenomena.
+This project explores how machine learning could automatically identify different quantum tunneling behaviors from transmission probability data. The goal is to simulate electrons tunneling through various barrier configurations and train ML models to classify the underlying physics.
 
 ## Physics Background
 
@@ -78,41 +81,57 @@ This project directly relates to Michele Governale's research areas:
 - Extension to related quantum systems
 - Applications to quantum technology development
 
+## Current Status
+
+**What's Implemented:**
+- ✅ Core quantum simulation code (`src/quantum_simulation/`)
+- ✅ ML model infrastructure (`src/ml_models/`)
+- ✅ Basic quantum dot simulator (1,100+ lines)
+
+**What's In Progress:**
+- 🚧 Jupyter notebooks (planned but not yet created)
+- 🚧 Full documentation
+- 🚧 Comprehensive examples
+- 🚧 Test coverage
+
 ## Getting Started
 
-1. **Prerequisites**
-   - Python 3.8+
-   - NumPy, SciPy, Matplotlib
-   - Scikit-learn for ML
-   - QuTiP for quantum simulations (optional)
+**Prerequisites:**
+- Python 3.8+
+- NumPy, SciPy, Matplotlib
+- Scikit-learn for ML
 
-2. **Installation**
-   ```bash
-   git clone [repository-url]
-   cd quantum_dot_ml_classification
-   pip install -r requirements.txt
-   ```
+**Installation:**
+```bash
+git clone https://github.com/adamfbentley/quantum-tunneling-ml.git
+cd quantum-tunneling-ml
+pip install -r requirements.txt
+```
 
-3. **Quick Start**
-   - Run `notebooks/01_physics_introduction.ipynb` for physics background
-   - Execute `notebooks/02_basic_simulation.ipynb` for first simulations
-   - Follow `notebooks/03_ml_classification.ipynb` for ML implementation
+**Note:** Interactive notebooks are planned for future development. Current code can be explored in the `src/` directory.
 
-## Research Impact
+## Learning Goals
 
-This project has potential for:
-- **Academic Publications**: ML applications in quantum transport
-- **Experimental Collaborations**: Automated device characterization
-- **Industry Applications**: Quantum computing and sensing technologies
-- **Educational Value**: Bridging quantum physics and machine learning
+This project serves as a learning exercise to explore:
 
-## Contact & Collaboration
+- Quantum mechanics simulation (Schrödinger equation solvers)
+- Feature extraction from physics data
+- ML classification pipelines
+- Bridging quantum physics and machine learning
 
-For questions, collaborations, or extensions of this work:
-- Related to Michele Governale's research group at VUW
-- Suitable for undergraduate projects through PhD research
-- Open to experimental collaborations and industry partnerships
+## Development Roadmap
 
----
+**Planned Future Work:**
+- [ ] Complete interactive Jupyter notebooks
+- [ ] Add comprehensive documentation
+- [ ] Implement additional barrier types
+- [ ] Expand ML model comparison
+- [ ] Add visualization tools
 
-*This project represents an intersection of fundamental quantum physics with practical machine learning applications, offering both educational value and genuine research potential in the rapidly growing field of quantum technologies.*
+## Contributing
+
+This is a personal learning project, but suggestions and feedback are welcome via issues or pull requests.
+
+## License
+
+MIT License - see LICENSE file for details.
