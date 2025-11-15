@@ -1,85 +1,55 @@
-# Machine Learning Classification of Quantum Tunneling Regimes
+# Machine Learning Classification of Quantum Dot Transport Regimes
 
-> **⚠️ PROJECT STATUS: Work in Progress / Learning Project**  
-> This repository contains initial code and design documents for a quantum tunneling ML classification project. The implementation is incomplete and notebooks are currently under development. This is a learning/exploratory project, not production-ready research.
+> **⚠️ PROJECT STATUS: Work in Progress**  
+> This repository contains code for a quantum dot ML classification project. The core simulation code (~1,100 lines) is implemented, but notebooks and documentation are incomplete. This is an exploratory physics learning project.
 
-A physics learning project exploring machine learning classification of quantum tunneling regimes in potential barrier systems, inspired by theoretical condensed matter physics research at Victoria University of Wellington.
+A physics project exploring machine learning classification of quantum dot transport regimes, inspired by theoretical condensed matter physics research at Victoria University of Wellington.
 
 ## Project Overview
 
-This project explores how machine learning could automatically identify different quantum tunneling behaviors from transmission probability data. The goal is to simulate electrons tunneling through various barrier configurations and train ML models to classify the underlying physics.
+This project explores using machine learning to classify different quantum transport behaviors in quantum dot systems. The implementation includes quantum dot physics simulation and ML classification infrastructure.
 
 ## Physics Background
 
-### Quantum Tunneling Basics
-- Transmission through potential barriers
-- Wave-particle duality and probability amplitudes
-- Energy-dependent transmission coefficients
-- Different barrier shapes and their signatures
+### Quantum Dot Transport
+- Electron transport through quantum-confined systems
+- Coulomb blockade and charging effects
+- Quantum coherence in mesoscopic devices
+- Energy-dependent conductance properties
 
-### Tunneling Regimes
-- **Single Rectangular Barrier**: Classic textbook case with analytical solutions
-- **Double Barrier (Resonant Tunneling)**: Shows resonance peaks and quantum interference
-- **Triangular Barrier**: Represents field-emission and band-bending situations
-- **Multiple Barriers**: Complex interference patterns and mini-band formation
+### Transport Regimes
+- **Single Quantum Dot**: Discrete energy levels and Coulomb blockade
+- **Double Quantum Dot**: Coupled dots with charge/spin states
+- **Quantum Dot Arrays**: Complex multi-level systems
+- **Different Coupling Strengths**: Weak vs. strong coupling regimes
 
 ### Observable Signatures
-- Transmission probability vs energy curves
-- Resonance peak positions and widths
-- Oscillatory behavior from quantum interference
-- Energy-dependent phase accumulation
+- Conductance vs gate voltage curves
+- Coulomb diamond patterns
+- Resonance peaks and level spacing
+- Temperature-dependent transport
 
-## Research Connection
+## Research Context
 
-This project directly relates to Michele Governale's research areas:
-- **Quantum Transport**: Understanding electron transmission through nanostructures
-- **Mesoscopic Physics**: Quantum coherence in small-scale systems
-- **Theoretical Foundations**: Building blocks for more complex quantum device physics
-- **Computational Methods**: Bridge between analytical solutions and numerical simulations
+This project relates to theoretical condensed matter physics research areas:
+- **Quantum Transport**: Electron transport through quantum-confined nanostructures
+- **Mesoscopic Physics**: Quantum coherence and charge quantization
+- **Quantum Dots**: Artificial atoms with discrete energy spectra
+- **Computational Methods**: Numerical simulation and ML-based classification
 
-## Implementation Plan
+## Key Features
 
-### Phase 1: Third-Year Assignment (Weeks 1-6)
-1. **Quantum Mechanics Review** (Week 1)
-   - Schrödinger equation for barrier problems
-   - Transmission and reflection coefficients
-   - Analytical solutions for simple cases
+### Quantum Simulation
+- Master equation approach for quantum dot dynamics
+- Energy level calculations and state evolution
+- Transport coefficient computation
+- Temperature-dependent effects
 
-2. **Simulation Development** (Weeks 2-3)
-   - Implement 1D Schrödinger equation solver
-   - Generate transmission vs energy data for different barriers
-   - Create dataset with various barrier configurations
-
-3. **Machine Learning** (Weeks 4-5)
-   - Extract features from transmission curves
-   - Train classification models (3-4 simple algorithms)
-   - Compare ML predictions with known physics
-
-4. **Analysis & Report** (Week 6)
-   - Interpret ML results in terms of quantum mechanics
-   - Compare with analytical solutions where possible
-   - Document findings and physics insights
-
-### Key Learning Outcomes
-- **Quantum Mechanics**: Deep understanding of tunneling physics
-- **Computational Physics**: Numerical solution of differential equations
-- **Machine Learning**: Feature extraction and classification
-- **Scientific Computing**: Data analysis and visualization
-- **Physics Interpretation**: Connecting ML results to underlying physics
-
-## Expected Outcomes
-
-### Assignment Level
-- Functional quantum dot transport simulator
-- Trained ML models achieving >90% classification accuracy
-- Physics-based interpretation of ML features
-- Comparison with traditional analysis methods
-
-### Research Level
-- Publication-quality results on ML for quantum transport
-- Potential collaboration with experimental groups
-- Extension to related quantum systems
-- Applications to quantum technology development
+### Machine Learning
+- Classification of transport regimes
+- Feature extraction from conductance data
+- Model training and evaluation
+- Physics-based interpretation
 
 ## Current Status
 
